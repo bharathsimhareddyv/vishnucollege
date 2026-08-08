@@ -1,4 +1,5 @@
-import { Component, input, signal } from '@angular/core';
+import { Component, inject, input, signal } from '@angular/core';
+import { Student } from '../../student';
 
 @Component({
   selector: 'app-header',
@@ -8,4 +9,9 @@ import { Component, input, signal } from '@angular/core';
 })
 export class Header {
 message = input()
+
+private studentService = inject(Student)
+
+protected text = this.studentService.getName()
+
 }

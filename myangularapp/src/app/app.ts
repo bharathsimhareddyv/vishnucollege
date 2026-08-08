@@ -10,7 +10,7 @@ import { EmojiPipe } from './emoji-pipe';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Fetchdata, LowerCasePipe,Navbar, UpperCasePipe, TitleCasePipe, CurrencyPipe, Home , EmojiPipe],
+  imports: [RouterOutlet, Fetchdata, LowerCasePipe, Navbar, UpperCasePipe, TitleCasePipe, CurrencyPipe, Home, EmojiPipe, Header],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
